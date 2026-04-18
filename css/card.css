@@ -1,0 +1,79 @@
+/* CARD */
+.card {
+  width: 100%;
+  max-width: 420px;
+  margin: auto;
+
+  background: #252536;
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 16px;
+
+  box-shadow: 
+    0 10px 25px rgba(0,0,0,0.4),
+    0 2px 6px rgba(0,0,0,0.3);
+
+  overflow: hidden;
+}
+
+.card h2 {
+  margin: 0;
+  padding: 16px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  background: rgba(255,255,255,0.03);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.card .desc {
+  margin: 0;
+  padding: 12px 20px;
+  font-size: 13px;
+  color: #aaa;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+.card .gauge {
+  padding: 20px;
+}
+
+.card .summary {
+  margin: 0;
+  padding: 14px 20px;
+  font-size: 14px;
+  color: #cfcfe6;
+  background: rgba(255,255,255,0.02);
+  border-top: 1px solid rgba(255,255,255,0.06);
+}
+
+.card a {
+  display: block;
+  padding: 10px 20px;
+  font-size: 13px;
+  color: #8ab4ff;
+  text-decoration: none;
+}
+
+.card a:hover {
+  text-decoration: underline;
+}
+
+.card small {
+  display: block;
+  padding: 10px 20px 16px;
+  font-size: 12px;
+  color: #8a8aa3;
+}
+
+.card button {
+  margin: 10px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: none;
+  background: #3a3a55;
+  color: white;
+  cursor: pointer;
+}
+
+.card button:hover {
+  background: #50507a;
+}

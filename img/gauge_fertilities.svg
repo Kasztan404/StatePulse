@@ -1,0 +1,52 @@
+<svg viewBox="0 0 200 120" preserveAspectRatio="xMidYMid meet">
+
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#c94f4f"/>
+      <stop offset="40%" stop-color="#c94f4f"/>
+      <stop offset="45%" stop-color="#e6a84f"/>
+      <stop offset="65%" stop-color="#e6a84f"/>
+      <stop offset="70%" stop-color="#5ac46b"/>
+      <stop offset="100%" stop-color="#5ac46b"/>
+    </linearGradient>
+  </defs>
+
+  <!-- background -->
+  <path d="M10 100 A90 90 0 0 1 190 100"
+        stroke="#2a2a35" stroke-width="18" fill="none" />
+
+  <!-- scale -->
+  <path d="M10 100 A90 90 0 0 1 190 100"
+        stroke="url(#grad)" stroke-width="18"
+        fill="none" stroke-linecap="round" />
+
+  <!-- indicator -->
+  <line x1="100" y1="100" x2="100" y2="30"
+        stroke="#ffffff" stroke-width="3"
+        class="needle" />
+
+  <!-- pivot -->
+  <circle cx="100" cy="100" r="4" fill="#fff" />
+
+  <!-- threshold -->
+  <text x="123" y="33" text-anchor="middle" fill="#aaa" font-size="8">2.1</text>
+
+  <!-- value -->
+  <text id="valueText"
+        x="100" y="120"
+        text-anchor="middle"
+        fill="#fff"
+        font-size="14"
+        font-weight="600">
+    0.0
+  </text>
+
+  <!-- state -->
+  <text id="statusText"
+        x="140" y="115"
+        text-anchor="middle"
+        font-size="14">
+    💀
+  </text>
+
+</svg>
