@@ -19,12 +19,14 @@ export function setupGauge(data){
     const max = 3.5;
     
     const fertilitesRoot = document.querySelector('#fertilites')
+    const title = fertilitesRoot.querySelector('h2');
     const svgRoot = fertilitesRoot.querySelector('#svg-gauge-fertilites');
     const needle = svgRoot.querySelector('.needle');
     const valueText = svgRoot.querySelector('#valueText');
     const statusText = svgRoot.querySelector('#statusText');
     const summaryText = fertilitesRoot.querySelector('.summary');
 
+    title.textContent = `Dzietność (${data[0].year})`;
     updateGauge(fertilityRate);
 
     function updateGauge(rate) {
