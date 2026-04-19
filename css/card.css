@@ -38,7 +38,7 @@
 
 .card .summary {
   margin: 0;
-  padding: 14px 20px;
+  padding: 10px 20px;
   font-size: 14px;
   color: #cfcfe6;
   background: rgba(255,255,255,0.02);
@@ -59,7 +59,6 @@
 
 .card small {
   display: block;
-  padding: 10px 20px 16px;
   font-size: 12px;
   color: #8a8aa3;
 }
@@ -77,3 +76,36 @@
 .card button:hover {
   background: #50507a;
 }
+
+.fertility-data {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap; /* 🔥 to robi responsywność */
+}
+
+/* tabela */
+#fertility-table table {
+  border-collapse: collapse;
+  margin-bottom: 5px;
+}
+
+#fertility-table td,
+#fertility-table th {
+  padding: 4px;
+  text-align: center;
+  border: #8c8c91a8;
+  border-style: solid;
+  border-width: 1px;
+}
+
+/* trend */
+#fertility-trendText {
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.trend-up { color: #5ac46b; }
+.trend-down { color: #c94f4f; }
+.trend-flat { color: #aaa; }
